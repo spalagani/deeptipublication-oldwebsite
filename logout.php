@@ -1,0 +1,10 @@
+<?php
+ob_start();
+session_start();
+session_regenerate_id();
+session_unset();
+session_destroy();
+session_id();
+header("Location:index.php");
+exit;
+?>
